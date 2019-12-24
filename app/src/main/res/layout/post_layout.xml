@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/post_profile_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+
+        android:src="@drawable/ic_person_black_50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/post_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="PhatNguyen"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/post_profile_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_clock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_access_time_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/post_profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/post_user_name" />
+
+
+    <TextView
+        android:id="@+id/post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="time"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/image_clock"
+        app:layout_constraintTop_toBottomOf="@+id/post_user_name" />
+
+    <TextView
+        android:id="@+id/post_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="date"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/post_user_name"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="post decription..."
+        android:layout_marginLeft="3dp"
+        android:padding="3dp"
+        android:textSize="16dp"
+        android:textColor="@color/textcolor"
+        app:layout_constraintTop_toBottomOf="@+id/post_profile_image" />
+
+    <ImageButton
+        android:id="@+id/post_option_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_more_vert_black_50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_description">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_transparent"
+        android:src="@drawable/ic_favorite_border_black_15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_image" />
+
+    <TextView
+        android:id="@+id/display_no_of_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="109 Likes"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/post_image" />
+
+    <TextView
+        android:id="@+id/display_no_of_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="1000 Comments"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_image" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/backgroundDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/linearLayoutLike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/background_button_like"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/img_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite_border_black_25dp"/>
+            <TextView
+                android:id="@+id/like_button"
+                android:text=" Thích"
+                android:textSize="18sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayoutCmt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/background_button_like"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_insert_comment_black_25dp"/>
+            <TextView
+                android:id="@+id/comment_button"
+                android:text="Bình luận"
+                android:layout_marginStart="4dp"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/backgroundDark"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

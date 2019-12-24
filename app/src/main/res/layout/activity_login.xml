@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logologin"/>
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:inputType="textEmailAddress"
+            android:drawableEnd="@drawable/ic_mail"
+            android:textColorHint="@color/hintcolor"
+            android:textColor="@color/textcolor"
+            android:hint="@string/email" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/password"
+            android:drawableEnd="@drawable/ic_lock"
+            android:password="true"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/hintcolor"
+            android:textIsSelectable="false" />
+
+        <Button
+            android:id="@+id/fogot_password"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/forgotPassword"
+            android:textAlignment="textEnd"
+            android:textColor="#5B5A5A"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/sign_in"
+            android:background="@drawable/large_button"
+            android:textColor="@color/background" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

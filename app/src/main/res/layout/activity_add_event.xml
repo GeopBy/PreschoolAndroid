@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.preschool.Event.AddEventActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#F7F7F7">
+
+        <Button
+            android:id="@+id/event_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_huy"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Thêm sự kiện"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/event_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:background="@drawable/button_ok"
+            android:text="OK" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/event_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:hint="Tên sự kiện"
+            android:inputType="textCapSentences" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background"
+            app:cardElevation="0dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="3dp"
+                android:gravity="center_vertical"
+                android:text="Cả ngày"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/is_all_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="10dp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background"
+            app:cardElevation="0dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="3dp"
+                android:gravity="center_vertical"
+                android:text="Từ"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/event_timestart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginLeft="100dp"
+
+                android:text="00:00"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/event_datestart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="10dp"
+                android:text="Select Date"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background"
+            app:cardElevation="0dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="3dp"
+                android:gravity="center_vertical"
+                android:text="Đến"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/event_timeend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginLeft="100dp"
+
+                android:text="00:00"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/event_dateend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="10dp"
+                android:text="Select Date"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:enabled="false"
+            android:background="@color/backgroundDark"/>
+
+        <EditText
+            android:id="@+id/event_location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:hint="Vi tri"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/event_decription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:hint="Mo ta"
+            android:inputType="textCapSentences" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

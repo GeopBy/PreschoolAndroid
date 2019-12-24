@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_chat_items">
+    <TextView
+        android:drawablePadding="20dp"
+        android:id="@+id/txtEvent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="Không có sự kiện"
+        android:gravity="center_vertical"
+        android:textColor="@color/textcolor"
+        android:drawableLeft="@drawable/ic_dob"
+        android:paddingLeft="50dp"
+
+        android:textStyle="bold"/>
+    <TextView
+        android:drawablePadding="20dp"
+        android:id="@+id/txtTime"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="Thời gian"
+        android:textColor="@color/textcolor"
+        android:drawableLeft="@drawable/ic_timer"
+        android:layout_marginHorizontal="10dp"
+        android:paddingLeft="50dp"
+
+        android:textStyle="bold"/>
+    <TextView
+        android:drawablePadding="20dp"
+        android:id="@+id/txtPlace"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="Địa điểm"
+        android:textColor="@color/textcolor"
+        android:drawableLeft="@drawable/ic_place"
+        android:layout_marginHorizontal="10dp"
+        android:paddingLeft="50dp"
+
+        android:textStyle="bold"/>
+    <TextView
+        android:drawablePadding="20dp"
+        android:id="@+id/txtDetail"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="Mô tả"
+        android:textColor="@color/textcolor"
+        android:drawableLeft="@drawable/ic_description"
+        android:layout_marginHorizontal="10dp"
+        android:paddingLeft="50dp"
+
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:background="#E0E0E0"
+       />
+
+</LinearLayout>

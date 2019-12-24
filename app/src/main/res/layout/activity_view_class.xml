@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_child"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Tên lớp: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_gender"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Giáo viên: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_dob"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Niên khóa: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_place"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Phòng học: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/count_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_count"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Số album ảnh: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/count_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_count"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Số sự kiện: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/count_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_count"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Số bài viết: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/count_donphep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_count"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Số đơn xin phép: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/count_children"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_count"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Số bé: "
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/edit_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonprofile"
+            android:text="Edit Class"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

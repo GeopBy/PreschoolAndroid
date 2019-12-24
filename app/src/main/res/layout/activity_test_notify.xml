@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".Notification.TestNotifyActivity">
+
+    <EditText
+        android:id="@+id/notify_content"
+        android:layout_width="match_parent"
+        android:hint="Content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/notify_channel1"
+        android:onClick="sendOnChannel1"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:text="channel 1"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/notify_channel2"
+        android:onClick="sendOnChannel2"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:text="channel 2"
+        android:layout_height="wrap_content" />
+</LinearLayout>

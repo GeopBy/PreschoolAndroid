@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/gradienbackground"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_profile_pic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_person_black_50dp" />
+
+            <TextView
+                android:id="@+id/person_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Full Name"
+                android:textColor="#fff"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/person_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_full_name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_username"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/father"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:paddingStart="50dp"
+                android:paddingLeft="20dp"
+                android:text="Cha"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:paddingStart="50dp"
+                android:paddingLeft="20dp"
+                android:text="Me"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:paddingStart="50dp"
+                android:paddingLeft="20dp"
+                android:text="Số điện thoại"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_info_kid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_class"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Lop"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/phoneteacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="phone"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Email"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Dia chi"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_role"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:paddingStart="50dp"
+            android:paddingLeft="20dp"
+            android:text="Tài khoản"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/edit_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonprofile"
+            android:text="Sửa tài khoản"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

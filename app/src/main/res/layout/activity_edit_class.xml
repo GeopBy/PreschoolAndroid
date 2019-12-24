@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileParentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <EditText
+            android:id="@+id/edit_classname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_username"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:hint="Tên lớp"/>
+        <EditText
+            android:id="@+id/edit_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_classname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:hint="Phòng học"
+            />
+        <Spinner
+            android:id="@+id/yearSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/edit_room" />
+
+        <TextView
+            android:id="@+id/border"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/yearSpinner"/>
+
+        <Spinner
+            android:id="@+id/teacherSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/border" />
+
+        <TextView
+            android:id="@+id/border1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/teacherSpinner"/>
+
+        <Button
+            android:id="@+id/update_class_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/border1"
+            android:text="Update Class Button"
+            android:layout_margin="20dp"
+            android:textColor="@color/background"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/colorAccent"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.preschool.Event.EventsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorAccent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F1"
+        android:theme="@style/CalendarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+    </CalendarView>
+    <TextView
+        android:drawablePadding="20dp"
+        android:id="@+id/txtEvent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="Không có sự kiện"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        tools:layout_editor_absoluteX="0dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/textcolor"
+        android:drawableLeft="@drawable/ic_dob"
+        android:paddingLeft="50dp"
+
+        android:textStyle="bold"/>
+    <TextView
+        android:drawablePadding="20dp"
+        android:id="@+id/txtTime"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="Thời gian"
+        app:layout_constraintTop_toBottomOf="@+id/txtEvent"
+        tools:layout_editor_absoluteX="0dp"
+        android:textColor="@color/textcolor"
+        android:drawableLeft="@drawable/ic_timer"
+        android:layout_marginHorizontal="10dp"
+        android:paddingLeft="50dp"
+
+        android:textStyle="bold"/>
+    <TextView
+        android:drawablePadding="20dp"
+        android:id="@+id/txtPlace"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="Địa điểm"
+        app:layout_constraintTop_toBottomOf="@+id/txtTime"
+        tools:layout_editor_absoluteX="0dp"
+        android:textColor="@color/textcolor"
+        android:drawableLeft="@drawable/ic_place"
+        android:layout_marginHorizontal="10dp"
+        android:paddingLeft="50dp"
+
+        android:textStyle="bold"/>
+    <TextView
+        android:drawablePadding="20dp"
+        android:id="@+id/txtDetail"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="Mô tả"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlace"
+        tools:layout_editor_absoluteX="0dp"
+        android:textColor="@color/textcolor"
+        android:drawableLeft="@drawable/ic_description"
+        android:layout_marginHorizontal="10dp"
+        android:paddingLeft="50dp"
+
+        android:textStyle="bold"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

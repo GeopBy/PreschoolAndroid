@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="2dp"
+    android:id="@+id/all_account_class_layout"
+    android:background="@color/background"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/all_account_profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_person_black_50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/all_account_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="User chưa đăng nhập"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/all_account_profile_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Email: "
+        android:textAlignment="textStart"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/all_account_profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/all_account_full_name" />
+
+
+    <TextView
+        android:id="@+id/all_account_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=" null "
+        android:textAlignment="textStart"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toEndOf="@+id/textview1"
+        app:layout_constraintTop_toBottomOf="@+id/all_account_full_name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="12dp"
+        android:background="@color/hintcolor"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all_account_profile_image"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

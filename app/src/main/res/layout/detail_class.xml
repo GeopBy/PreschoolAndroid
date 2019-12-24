@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_detail_class"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Tên Lớp" />
+    <TextView
+        android:id="@+id/class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Giáo Viên"/>
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Phòng Học"/>
+    <TextView
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Niên Khóa"/>
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+</LinearLayout>

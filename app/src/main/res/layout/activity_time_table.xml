@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeTable.TimeTableActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.github.jhonnyx2012.horizontalpicker.HorizontalPicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.github.jhonnyx2012.horizontalpicker.HorizontalPicker>
+
+        <LinearLayout
+            android:id="@+id/layout_add_time_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            >
+
+            <TextView
+                android:id="@+id/nStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="00:00"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.1"
+                />
+
+            <TextView
+                android:id="@+id/nEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.5"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.1"
+                />
+
+            <EditText
+                android:id="@+id/edtDiscription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="textCapSentences"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+              android:layout_weight="1.6" />
+
+            <ImageButton
+                android:id="@+id/save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="0.3"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:src="@drawable/ic_send_black_32dp"
+                app:layout_constraintHorizontal_bias="1.0" />
+            <ImageButton
+                android:id="@+id/edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_send_black_32dp"
+                app:layout_constraintHorizontal_bias="1.0"
+                android:layout_weight="0.3" />
+
+        </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timetable_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColor">@color/color_text_chat</item>
+        //underline color of Edittext
+        <item name="colorControlNormal">@color/colorAccent</item>
+        //background color
+        <item name="android:windowBackground">@color/background</item>
+        //toolbar back arrow color
+        <item name="android:textColorSecondary">@color/background</item>
+        //toolbar title color
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <!--<item name="actionBarSize">40dp</item>-->
+    </style>
+
+
+    <!-- Theme for Calendar-->
+    <style name="CalendarTheme" parent="Platform.MaterialComponents.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="AddEventsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#F7F7F7</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColor">@color/textcolor</item>
+        //underline color of Edittext
+        <item name="colorControlNormal">@color/colorAccent</item>
+        //background color
+        <item name="android:windowBackground">@color/background</item>
+        //toolbar back arrow color
+        <item name="android:textColorSecondary">@color/background</item>
+        //toolbar title color
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <!--Style Menu-->
+    <style name="MyActionBar.MenuTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item> <!--LowerCase text-->
+        <item name="android:textStyle">normal</item>
+
+        <!--<item name="android:textAppearance">@android:style/TextAppearance.Medium</item>-->
+    </style>
+
+    <!--Theme with ActionBar-->
+    <style name="AppThemeActionbar" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        //toolbar back arrow color
+        <item name="android:textColorSecondary">@color/background</item>
+        //toolbar title color
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+
+    <!-- Night/day Mode theme   -->
+    <style name="DialogViewImage" parent="ThemeOverlay.MaterialComponents">
+        <item name="android:background">#313131</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransiton</item>
+    </style>
+
+    <!--WindowAnimationTransiton-->
+    <style name="WindowAnimationTransiton">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppThemeActionbar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeActionbar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppThemeActionbar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

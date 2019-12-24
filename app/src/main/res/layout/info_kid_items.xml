@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/person_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_class"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingLeft="20dp"
+        android:text="Tên lớp: "
+        android:textColor="@color/textcolor"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/relationship_with_children"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_child"
+        android:drawablePadding="10dp"
+        android:gravity="left"
+        android:paddingStart="50dp"
+        android:paddingLeft="20dp"
+        android:text="Phụ huynh của: "
+        android:textColor="@color/textcolor"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/person_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_dob"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingLeft="20dp"
+        android:text="Sinh nhật"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/person_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_gender"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingLeft="20dp"
+        android:text="Sinh nhật"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+</LinearLayout>

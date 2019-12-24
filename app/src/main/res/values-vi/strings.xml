@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Preschool</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">đăng nhập</string>
+    <string name="forgotPassword">Quên mật khẩu?</string>
+    <string name="password">Mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="wellcome">CHÀO MỪNG</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nenableDarkMode">Kích hoạt nền tối</string>
+    <string name="darkMode">Chế độ nền tối</string>
+    <string name="testMail">1@gmail.com</string>
+    <string name="testPass">123456</string>
+    <string name="createNewAccount">Tạo tài khoản mới</string>
+    <string name="dontHaveAccount">Không có tài khoản?</string>
+    <string name="setting">Cài đặt</string>
+    <string name="change_join_class">Đổi lớp</string>
+    <string name="event">Sự kiện</string>
+    <string name="profile">Thông tin</string>
+    <string name="homework">Bài tập</string>
+    <string name="student">Học sinh</string>
+    <string name="permissonform">Đơn xin phép</string>
+    <string name="timetable">Thời khóa biểu</string>
+    <string name="help">Trợ giúp</string>
+    <string name="photo_album">Album ảnh</string>
+    <string name="you_are_Logged_In_successfully">Đăng nhập thành công.</string>
+    <string name="insert_email">Vui lòng nhậm email</string>
+    <string name="insert_pass">Vui lòng nhập mật khẩu</string>
+    <string name="login">Login</string>
+    <string name="message_login_successfully">Vui lòng đợi trong khi đăng nhập vào Tài khoản của bạn</string>
+    <string name="error_occured">Xuất hiện lỗi:</string>
+    <string name="parent_profile">Thông tin tài khoản</string>
+    <string name="forgo_password_dialog">Quên Mật Khẩu</string>
+    <string name="back">Hủy</string>
+    <string name="not_a_mail">Mail không hợp lệ !</string>
+    <string name="notify_reset_pass">Để đặt lại mật khẩu, nhập email của bạn, nhấn nút và kiểm tra mail để làm theo hướng dẫn.</string>
+    <string name="reset_pass_successful">Kiểm tra hòm thư của bạn để hoàn tất tạo lại mật khẩu</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="register">Register</string>
+    <string name="menu">Thực đơn</string>
+    <string name="send">Gửi</string>
+    <string name="edit">Sửa</string>
+    <string name="save">Lưu</string>
+    <string name="add_title_album">Tên album</string>
+    <string name="add_photo">Thêm ảnh</string>
+    <string name="select_photos">Chọn ảnh</string>
+    <string name="upload">Tải lên</string>
+    <string name="create_new_album">Tạo album mới</string>
+    <string name="what_on_your_mind">Bạn đang nghĩ gì?</string>
+    <string name="post">Đăng bài</string>
+    <string name="my_profile">Thông tin tài khoản</string>
+    <string name="change_class">Đổi lớp</string>
+    <string name="reamneAlbum">Đổi tên album</string>
+    <string name="saveAlbum">Lưu về máy</string>
+    <string name="deleteAlbum">Xóa album</string>
+
+</resources>

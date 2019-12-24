@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/txtFistName"
+            android:background="@drawable/border_edit_text"
+            android:layout_width="160dp"
+            android:layout_marginEnd="50dp"
+            android:layout_height="wrap_content"
+            android:hint="Fist name"/>
+        <EditText
+            android:id="@+id/txtLastName"
+            android:background="@drawable/border_edit_text"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:background="@drawable/border_edit_text"
+        android:id="@+id/txtUserName"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"/>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:background="@drawable/border_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Password"/>
+    <EditText
+        android:id="@+id/txtConfirmPassword"
+        android:background="@drawable/border_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Confirm Your password"
+        />
+    <EditText
+        android:id="@+id/txtEmail"
+        android:background="@drawable/border_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Email"
+        />
+    <EditText
+        android:id="@+id/txtPhone"
+        android:background="@drawable/border_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:hint="Phone"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:background="@drawable/large_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:text="register"/>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?attr/colorPrimary"
+            android:layoutDirection="rtl"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:titleTextColor="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp" />-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icon_user"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="12dp"
+                     />
+
+                <TextView
+                    android:id="@+id/class_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-10dp"
+                    android:layout_marginEnd="60dp"
+                    android:fontFamily="@font/lobster_regular"
+                    android:gravity="center"
+                    android:text="Ten lop"
+                    android:textColor="@color/background"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:layoutDirection="ltr"
+            android:elevation="2dp"
+            app:tabIndicatorColor="@color/colorPrimary">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include layout="@layout/content_navigation" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

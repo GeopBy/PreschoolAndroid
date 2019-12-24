@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Children.StudentActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách bé"
+        android:textSize="22dp"
+        android:textAlignment="center"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/childrenRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

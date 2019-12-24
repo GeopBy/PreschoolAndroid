@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="H"/>
+
+
+    <EditText
+        android:id="@+id/txtChildrenFullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên của bé"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:inputType="textCapSentences"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:text="Giới tính của bé"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:theme="@style/AppTheme"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:textColor="@android:color/black"
+            android:id="@+id/radioButton_male"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:textColor="@android:color/black"
+            android:text="Nữ "
+            android:id="@+id/radioButton_female"
+            android:checked="false" />
+    </RadioGroup>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/txtChildrenBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sinh nhật của bé"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnChildrenBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/large_button"
+        android:layout_marginBottom="20dp"
+        android:text="Lưu"/>
+
+</LinearLayout>

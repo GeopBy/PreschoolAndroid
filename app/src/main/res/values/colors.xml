@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buttonColor">#FF5722</color>
+    <color name="colorPrimary">#FFA000</color>
+    <color name="colorPrimaryDark">#FF8722</color>
+    <color name="colorAccent">#FFA000</color>
+    <color name="background">#ffffff</color>
+    <color name="backgroundDark">#DCDEE3</color>
+    <color name="textcolor">#4E4E4E</color>
+    <color name="hintcolor">#aaa</color>
+    <!--<color name="nonecolor"></color>-->
+    <color name="red">#f44336</color>
+    <color name="editText">#EEEEEE</color>
+    <color name="colorNotSeenMes">#d6e9fc</color>
+    <color name="colorMes">@android:color/darker_gray</color>
+    <color name="color_text_chat">#616161</color>
+    <color name="bgr">#ffdd99</color>
+</resources>

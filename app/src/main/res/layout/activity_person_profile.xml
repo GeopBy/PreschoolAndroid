@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradienbackground"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingBottom="20dp"
+        android:scrollbarSize="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/gradienbackground"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_profile_pic"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_person_black_50dp"
+                    />
+
+                <TextView
+                    android:id="@+id/person_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Họ và tên"
+                    android:textColor="#fff"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/person_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/person_full_name"
+                    android:text="Tên"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="18dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/person_username"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/ic_class"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:paddingStart="50dp"
+                android:paddingLeft="20dp"
+                android:text="Tên lớp học"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/layout_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/father"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="20dp"
+                    android:text="Cha"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/mother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="20dp"
+                    android:text="Me"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="20dp"
+                    android:text="Số điện thoại"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kidname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:drawableLeft="@drawable/ic_child"
+                    android:drawablePadding="10dp"
+                    android:gravity="left"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="20dp"
+                    android:text="Phụ huynh của bé"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/person_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:drawableLeft="@drawable/ic_dob"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="20dp"
+                    android:text="Ngày sinh của bé"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:drawableLeft="@drawable/ic_gender"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:paddingStart="50dp"
+                    android:paddingLeft="20dp"
+                    android:text="Gioi tinh"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/phonenumberteacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:paddingStart="50dp"
+                android:paddingLeft="20dp"
+                android:text="Số điện thoại"
+                android:textColor="@color/textcolor"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:gravity="left"
+                android:paddingStart="50dp"
+                android:paddingLeft="20dp"
+                android:text="Địa chỉ:"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

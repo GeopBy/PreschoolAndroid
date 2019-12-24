@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/button_what_on_your_mind"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_whats_on_your_mind"
+        android:drawableRight="@drawable/ic_camera_alt_24dp"
+        android:textAlignment="textStart"
+        android:text="What's on your mind ?"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:layout_height="wrap_content" />
+</LinearLayout>

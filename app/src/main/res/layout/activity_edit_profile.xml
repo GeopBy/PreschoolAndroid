@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProfileParentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_profile_image"
+            android:src="@drawable/ic_person_black_50dp"
+            android:focusable="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:text="Tên người dùng"/>
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:hint="Tên người dùng"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Họ và tên cha"/>
+
+        <EditText
+            android:id="@+id/fathername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:hint="Họ và tên cha"
+            android:textColor="@android:color/background_dark" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Họ và tên mẹ"/>
+
+        <EditText
+            android:id="@+id/mothername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:hint="Họ và tên mẹ"
+            android:textColor="@android:color/background_dark" />
+
+
+        <TextView
+            android:id="@+id/textviewChildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Phụ huynh của bé"/>
+
+
+        <EditText
+            android:id="@+id/edit_parentof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phụ huynh của bé"
+            android:inputType="textCapSentences"
+            android:textColor="@android:color/background_dark"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Giới tính"/>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:theme="@style/AppTheme"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/radioButton_male"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:textColor="@android:color/black"
+                android:text="Nữ"
+                android:textSize="16sp"
+                android:id="@+id/radioButton_female"
+                android:checked="false" />
+        </RadioGroup>
+        <!--<EditText-->
+            <!--android:id="@+id/sex"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Giới tính"-->
+            <!--android:inputType="textCapSentences"-->
+            <!--android:textColor="@android:color/background_dark"-->
+            <!--/>-->
+        <TextView
+            android:id="@+id/textviewBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:text="Sinh nhật"/>
+
+        <EditText
+            android:id="@+id/edit_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sinh nhật"
+            android:focusable="false"
+            android:inputType="date"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="Số điện thoại"/>
+
+
+        <EditText
+            android:id="@+id/edit_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:inputType="phone"
+            android:textColor="@android:color/background_dark"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Địa chỉ"/>
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Đại chỉ"
+            android:textColor="@android:color/background_dark"
+            />
+
+        <Button
+            android:id="@+id/update_account_settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/large_button"
+            android:text="Cập nhật"
+            android:textAllCaps="false"
+            android:textColor="@color/background"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+
+</ScrollView>

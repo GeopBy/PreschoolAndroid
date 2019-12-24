@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Children.ViewStudentActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Thông tin của bé"
+            android:textStyle="bold"
+            android:textColor="@color/buttonColor"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_child"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Họ và tên bé:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/nameBe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="lalala"
+            android:textSize="16dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_dob"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Ngày sinh:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/DoBBe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="lalala"
+            android:textSize="16dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_gender"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Giới tính:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="lalala"
+            android:textSize="16dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Họ và tên bố:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/DadBe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="lalala"
+            android:textSize="16dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Họ và tên mẹ:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/MomBe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="lalala"
+            android:textSize="16dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="Địa chỉ:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/AddrBe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="lalala"
+            android:textSize="16dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="SĐT liên lạc"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/PhoneBe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="lalala"
+            android:textSize="16dp"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+</LinearLayout>
